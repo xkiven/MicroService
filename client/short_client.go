@@ -13,7 +13,7 @@ func GenerateShortUrlClient(req *shorturl.GenerateReq) (*shorturl.GenerateResp, 
 	fmt.Println("创建客户端")
 	cli, err := shorturlservice.NewClient(
 		"GenerateShortUrlService",
-		client.WithHostPorts("127.0.0.1:8888"),
+		client.WithHostPorts("127.0.0.1:8889"),
 	)
 	if err != nil {
 		fmt.Println(err)
@@ -33,7 +33,7 @@ func RedirectShortUrlClient(req *shorturl.RedirectReq) (*shorturl.RedirectResp, 
 	fmt.Println("创建客户端")
 	cli, err := shorturlservice.NewClient(
 		"RedirectShortUrlService",
-		client.WithHostPorts("127.0.0.1:8888"),
+		client.WithHostPorts("127.0.0.1:8889"),
 	)
 	if err != nil {
 		fmt.Println(err)

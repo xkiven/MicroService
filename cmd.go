@@ -14,8 +14,8 @@ func main() {
 	r.POST("/register", http_handler.RegisterHandler)
 	r.POST("/login", http_handler.LoginHandler)
 
-	r.POST("/create", http_handler.GenerateShortUrlHandler) // 创建短链
-	r.GET("/:shortUrl", http_handler.RegisterHandler)       // 访问短链
+	r.POST("/create", http_handler.GenerateShortUrlHandler)  // 创建短链
+	r.GET("/Redirect", http_handler.RedirectShortUrlHandler) // 访问短链
 
 	// 启动 HTTP 服务
 
